@@ -9,11 +9,11 @@ class EditWorkspaceDialog extends StatefulWidget {
   const EditWorkspaceDialog({
     required this.workspace,
     required this.onSave,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
-  _EditWorkspaceDialogState createState() => _EditWorkspaceDialogState();
+  State<EditWorkspaceDialog> createState() => _EditWorkspaceDialogState();
 }
 
 class _EditWorkspaceDialogState extends State<EditWorkspaceDialog> {
